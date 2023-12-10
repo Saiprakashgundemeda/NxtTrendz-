@@ -1,0 +1,87 @@
+/* Write your CSS here */
+/* .similar_product_link_component_element {
+  text-decoration: none;
+} */
+.similar_product_item_card_container {
+  height: 50vh;
+  width: 17vw;
+  margin-right: 3vw;
+  font-family: 'Roboto';
+}
+@media screen and (max-width: 768px) {
+  .similar_product_item_card_container {
+    width: 60%;
+    height: 50vh;
+  }
+}
+.similar_product_img_element {
+  height: 60%;
+  width: 100%;
+  border-width: 0px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .similar_product_img_element {
+    height: 50%;
+  }
+}
+.similar_product_title_element {
+  font-size: 20px;
+  color: #171f46;
+  font-weight: 500;
+}
+
+.similar_product_brand_element {
+  color: #594d6d;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+.similar_product_item_price_element {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 13px;
+}
+@media screen and (max-width: 768px) {
+  .similar_product_title_element {
+    font-size: 16px;
+  }
+  .similar_product_brand_element {
+    font-size: 13px;
+  }
+}
+.similar_product_item_bottom_section_container {
+  display: flex;
+  justify-content: space-between;
+}
+.similar_product_item_rating_box_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 0px;
+  height: 35px;
+  width: 70px;
+  background-color: #3b82f6;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .similar_product_item_rating_box_container {
+    height: 25px;
+    width: 60px;
+  }
+}
+.similar_product_item_rating_element {
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  color: #ffffff;
+}
+.similar_product_item_star {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}

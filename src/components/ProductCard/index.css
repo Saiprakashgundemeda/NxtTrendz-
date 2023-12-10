@@ -1,0 +1,82 @@
+/* TODO: Add your CSS here */
+.product_item_card_container {
+  width: 24vw;
+  height: 70vh;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .product_item_card_container {
+    width: 100%;
+  }
+}
+.product_img_element {
+  height: 50vh;
+  width: 100%;
+  border-width: 0px;
+  border-radius: 5px;
+}
+.product_item_bottom_section_container {
+  display: flex;
+  justify-content: space-between;
+}
+.title_element {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+}
+.price_element {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 13px;
+}
+@media screen and (max-width: 768px) {
+  .price_element {
+    font-weight: 500;
+  }
+}
+.rating_box_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 0px;
+  height: 35px;
+  width: 70px;
+  background-color: #3b82f6;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+.rating_element {
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .rating_element {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+.brand_element {
+  color: #594d6d;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .brand_element {
+    font-size: 18px;
+  }
+}
+.star {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+.product_link_component_element {
+  text-decoration: none;
+}

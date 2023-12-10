@@ -1,0 +1,23 @@
+.prime_deals_heading_element {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 48px;
+}
+.register_prime_image {
+  width: 75vw;
+  border-radius: 5px;
+}
+.products_loader_container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .products_items_display_bg_container {
+    display: flex;
+    flex-direction: column;
+  }
+}

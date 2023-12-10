@@ -1,0 +1,130 @@
+/* Write your CSS code here */
+.nav_bg_container {
+  height: 10vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .nav_bg_container {
+    align-items: center;
+    padding: 15px;
+  }
+}
+.nav_bar_card_container_inside_bg_container {
+  height: 10vh;
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .nav_bar_card_container_inside_bg_container {
+    width: 90vw;
+  }
+}
+.nav_img_element {
+  height: 43px;
+  width: 170px;
+}
+.nav_items_container {
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 0px;
+}
+@media screen and (max-width: 850px) {
+  .nav_items_container {
+    width: 35vh;
+  }
+}
+.nav_item {
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+}
+.logout_button_element {
+  height: 30px;
+  width: 70px;
+  background-color: #0967d2;
+  font-family: 'Roboto';
+  border-width: 0px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.log_out_img_container_sm {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav_bg_container {
+    width: 95vw;
+    height: 5vh;
+    margin-top: 10px;
+  }
+  .log_out_img_container_sm {
+    display: block;
+  }
+  .nav_items_container {
+    display: none;
+  }
+  .nav_logout_img_element {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+  .nav_img_element {
+    height: 25px;
+    width: 100px;
+  }
+}
+.nav_items_sm {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav_items_sm {
+    display: block;
+    width: 99vw;
+    height: 7vh;
+    background-color: #e6f6ff;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .nav_item_sm {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+}
+.log_out_button_element_sm {
+  padding: 0px;
+  border-width: 0px;
+
+  background-color: transparent;
+}
+.link {
+  text-decoration: none;
+}
+.cart_count {
+  padding: 1.5px 3.5px 1.5px 3px;
+  background-color: #bfdbfe;
+  color: #0967d2;
+  border-radius: 10px;
+  margin-left: 5px;
+  font-size: 10px;
+}
+.cart_quantity_icon_container {
+  display: flex;
+  align-items: center;
+}

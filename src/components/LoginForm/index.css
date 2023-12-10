@@ -1,0 +1,129 @@
+/* Write your CSS code here */
+.login_route_bg_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_card_container {
+  height: 60vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo_img_container_sm {
+  display: none;
+}
+@media (max-width: 850px) {
+  .login_img_element {
+    width: 50vw;
+  }
+  .login_card_container {
+    width: 80vw;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .login_card_container {
+    flex-direction: column;
+    height: 90vh;
+    width: 80vw;
+    justify-content: space-between;
+  }
+}
+
+.login_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #ffffff;
+  height: 400px;
+  width: 350px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+}
+
+.login_img_element {
+  height: 300px;
+  width: 600px;
+}
+
+@media (max-width: 768px) {
+  .login_img_element {
+    height: 28vh;
+    width: 70vw;
+  }
+  .login_container {
+    width: 300px;
+    height: 350px;      
+  }
+}
+.img_container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .logo_img_container_sm {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .img_container {
+    display: none;
+  }
+}
+.logo_img_element {
+  height: 50px;
+  width: 200px;
+}
+.username_container {
+  display: flex;
+  flex-direction: column;
+}
+.password_container {
+  display: flex;
+  flex-direction: column;
+}
+.input_element {
+  height: 40px;
+  background-color: #e6f6ff;
+  border-width: 0px;
+  font-size: 15px;
+  font-family: 'Roboto';
+  padding-left: 8px;
+  border-radius: 5px;
+  outline: none;
+}
+.label_element {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Roboto';
+  color: #475569;
+  margin-bottom: 4px;
+}
+.button_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login_button_element {
+  height: 40px;
+  width: 100%;
+  border-width: 0px;
+  border-radius: 5px;
+  background-color: #0b69ff;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.err_msg {
+  color: #ff0b37;
+  font-size: 12px;
+  font-family: 'Roboto';
+  margin-top: 6px;
+}
