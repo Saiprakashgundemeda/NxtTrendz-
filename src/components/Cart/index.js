@@ -10,12 +10,7 @@ const Cart = () => (
   <CartContext.Consumer>
     {value => {
       const {cartList, removeAllCartItems} = value
-      let totalPrice = 0
-      let i = 0
-      while (i < cartList.length) {
-        totalPrice += cartList[i].price * cartList[i].quantityCount
-        i += 1
-      }
+
       const showEmptyView = cartList.length === 0
 
       return (
@@ -35,10 +30,7 @@ const Cart = () => (
                   Remove All
                 </button>
                 <CartListView />
-                <CartSummary
-                  cartItemsCount={cartList.length}
-                  totalPrice={totalPrice}
-                />
+                <CartSummary />
               </div>
             )}
           </div>

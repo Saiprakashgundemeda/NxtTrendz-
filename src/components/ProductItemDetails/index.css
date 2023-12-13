@@ -188,10 +188,16 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 .failure_view_img_element {
   height: 60vh;
   width: 50vw;
+}
+@media screen and (max-width: 768px) {
+  .failure_view_img_element {
+    height: 35vh;
+  }
 }
 .error_view_heading {
   font-size: 30px;

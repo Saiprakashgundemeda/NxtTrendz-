@@ -4,7 +4,7 @@ import {Component} from 'react'
 
 import Header from '../Header/index'
 
-import AllProductsSection from '../AllProductsSection/index'
+import AllProductsSection from '../AllProductsSection'
 
 import PrimeDealsSection from '../PrimeDealsSection/index'
 

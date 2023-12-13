@@ -33,7 +33,7 @@ class ProductItemDetails extends Component {
     const jwtToken = Cookies.get('jwt_token')
     const options = {
       headers: {
-        Authorization: `Beaber ${jwtToken}`,
+        Authorization: `Bearer ${jwtToken}`,
       },
       method: 'GET',
     }
@@ -41,11 +41,14 @@ class ProductItemDetails extends Component {
     const {params} = match
     const {id} = params
     const apiUrl = `https://apis.ccbp.in/products/${id}`
+
     const response = await fetch(apiUrl, options)
-    if (response.ok === true) {
+
+    console.log('Response status code:', response.status)
+
+    if (response.ok) {
       const data = await response.json()
       const similarProductsData = data.similar_products
-      //   console.log('fetched_product_details', data)
       const updatedProductDetails = {
         id: data.id,
         imageUrl: data.image_url,
@@ -57,7 +60,6 @@ class ProductItemDetails extends Component {
         rating: data.rating,
         availability: data.availability,
       }
-      console.log('updated_product_details_list', updatedProductDetails)
       const updatedSimilarProducts = similarProductsData.map(eachProduct => ({
         id: eachProduct.id,
         imageUrl: eachProduct.image_url,
@@ -77,6 +79,7 @@ class ProductItemDetails extends Component {
         activeStatus: apiStatusConstant.success,
       })
     } else {
+      console.log('API request failed.')
       this.setState({activeStatus: apiStatusConstant.failure})
     }
   }
