@@ -1,7 +1,8 @@
 /* Write your CSS code here */
 .login_route_bg_container {
-  height: 100vh;
+  min-height: 92vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -13,12 +14,13 @@
   justify-content: space-evenly;
   align-items: center;
 }
+
 .logo_img_container_sm {
   display: none;
 }
 @media (max-width: 850px) {
-  .login_img_element {
-    width: 50vw;
+  .login_route_bg_container {
+    min-height: 90vw;
   }
   .login_card_container {
     width: 80vw;
@@ -28,9 +30,9 @@
 @media (max-width: 768px) {
   .login_card_container {
     flex-direction: column;
-    height: 90vh;
+    height: 80vh;
     width: 80vw;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -54,12 +56,11 @@
 
 @media (max-width: 768px) {
   .login_img_element {
-    height: 28vh;
-    width: 70vw;
+    display: none;
   }
   .login_container {
     width: 300px;
-    height: 350px;      
+    height: 350px;
   }
 }
 .img_container {
@@ -126,4 +127,61 @@
   font-size: 12px;
   font-family: 'Roboto';
   margin-top: 6px;
+}
+.note_container {
+  width: 50vw;
+  min-height: 8vh;
+}
+@media screen and (max-width: 768px) {
+  .note_container {
+    width: 90vw;
+  }
+}
+.note_bg_container {
+  font-family: 'Roboto';
+  background-color: #000000;
+  border-radius: 10px;
+  height: 35vh;
+  padding: 10px;
+}
+.note_text {
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  .note_text {
+    margin: 3px;
+  }
+}
+.thankyou_text {
+  text-align: center;
+}
+.close_button {
+  padding: 0;
+  background-color: transparent;
+  border-width: 0px;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+.show_credentials_button {
+  height: 40px;
+  width: 130px;
+  font-size: 15px;
+  font-family: 'roboto';
+  font-weight: 500;
+  color: #ffffff;
+  background-color: blue;
+  border-width: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+@media screen and (max-width: 768px) {
+  .show_credentials_button {
+    height: 30px;
+    font-size: 12px;
+    width: 110px;
+    margin-left: 200px;
+  }
 }

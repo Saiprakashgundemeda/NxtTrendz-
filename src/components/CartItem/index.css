@@ -80,6 +80,8 @@
 
 .quantity-controller-button {
   padding: 0;
+  border-width: 0px;
+  background-color: transparent;
 }
 
 .cart-quantity {

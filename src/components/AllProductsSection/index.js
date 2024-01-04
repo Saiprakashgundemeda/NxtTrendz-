@@ -79,7 +79,7 @@ class AllProductsSection extends Component {
   state = {
     productsData: [],
     pageResultsStatus: productsPageStatusOptions.initial,
-    activeOptionId: sortbyOptions[1].optionId,
+    activeOptionId: sortbyOptions[0].optionId,
     searchInput: '',
     categoryId: '',
     ratingId: '',
